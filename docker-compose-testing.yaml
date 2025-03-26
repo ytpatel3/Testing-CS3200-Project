@@ -1,3 +1,4 @@
+name: project-app-testing
 services:
   app-test:
     build: ./app

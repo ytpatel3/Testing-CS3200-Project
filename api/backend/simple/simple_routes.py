@@ -46,3 +46,10 @@ def affirmation():
 @simple_routes.route('/message')
 def mesage():
     return redirect(url_for(affirmation))
+
+@simple_routes.route('/helloyash')
+def hello():
+    message = "<h1>Hello Dumbass!</h1>"
+    response = make_response(message)
+    response.status_code = 200
+    return response
